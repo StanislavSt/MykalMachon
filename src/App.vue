@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <Navigation />
-    <Body />
+    <div class="inner">
+      <Navigation />
+      <Body />
+    </div>
   </div>
 </template>
 
@@ -20,11 +22,19 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f7f7f7;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
 }
 </style>
