@@ -18,7 +18,7 @@ export default {
 
 <style>
 #nav {
-  color: blue;
+  color: var(--blue);
   padding: 24px 0px 24px 24px;
   display: flex;
   margin-top: -10px;
@@ -41,7 +41,7 @@ export default {
 }
 
 .nav-item:focus {
-  background-color: blue;
+  background-color: var(--blue);
   color: white;
 }
 </style>

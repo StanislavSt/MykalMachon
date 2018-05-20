@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="inner">
-      <Navigation />
+     <!-- <Navigation /> -->
       <Body />
     </div>
   </div>
@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --blue: #b721ff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +38,7 @@ export default {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: #f7f7f7;
+  background: #eeeeee;
 }
 
 .inner {
