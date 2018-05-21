@@ -21,12 +21,25 @@
 <script>
 export default {
   name: 'IntroCard',
-  methods: {}
+  methods: {
+    display: function() {
+      const introCard = document.getElementById('introCard');
+      setTimeout(() => {
+        introCard.classList.toggle('loadIn');
+        introCard.classList.add('show');
+      }, 600);
+      introCard.classList.toggle('loadIn');
+    }
+  },
+  mounted: function() {
+    this.display();
+  }
 };
 </script>
 
 <style scoped>
 #introCard {
+  opacity: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -39,6 +52,25 @@ export default {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
+}
+
+.loadIn {
+  animation: scaleUp 600ms cubic-bezier(0.11, 1.22, 0.71, 1.09) 1;
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.show {
+  opacity: 1 !important;
 }
 
 div.splitSum {
@@ -67,7 +99,7 @@ div.splitPic img {
   border-bottom-right-radius: 5px;
 }
 
-@media only screen and (max-width: 996px) {
+.loadIn @media only screen and (max-width: 996px) {
   #introCard {
     padding: 40px;
     display: flex;
