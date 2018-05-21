@@ -75,5 +75,9 @@ div.splitPic img {
   #picture {
     display: none;
   }
+
+  div.splitSum {
+    width: 100%;
+  }
 }
 </style>
