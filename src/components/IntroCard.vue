@@ -4,7 +4,7 @@
       <div class="top">
         Mykal Machon
         <p>
-          A Web Developer based in the Abbotsford, British Columbia, Canada. Working for Aprario Group and attending the University of the Fraser Valley for a Bachelors of Science in Computer Infromation Systems. 
+          A Web Developer based in Abbotsford, British Columbia, Canada. Working for Aprario Group and attending the University of the Fraser Valley for a Bachelors of Science in Computer Infromation Systems. 
         </p>
       </div>
       <div class="bottom">
@@ -38,6 +38,7 @@ export default {
   color: var(--textIcons);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 div.splitSum {
@@ -62,6 +63,8 @@ div.splitPic {
 div.splitPic img {
   width: 100%;
   height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media only screen and (max-width: 996px) {
@@ -70,6 +73,7 @@ div.splitPic img {
     display: flex;
     flex-direction: column;
     min-width: 0px;
+    border-radius: 0px;
   }
 
   #picture {
@@ -78,6 +82,10 @@ div.splitPic img {
 
   div.splitSum {
     width: 100%;
+  }
+
+  div.top {
+    padding-top: 4rem;
   }
 }
 </style>
