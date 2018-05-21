@@ -99,7 +99,7 @@ div.splitPic img {
   border-bottom-right-radius: 5px;
 }
 
-.loadIn @media only screen and (max-width: 996px) {
+@media only screen and (max-width: 996px) {
   #introCard {
     padding: 40px;
     display: flex;
