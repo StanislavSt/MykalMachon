@@ -2,17 +2,20 @@
   <div id="app">
     <div id="inner">
       <IntroCard />
+      <SkillsCard />
     </div>
   </div>
 </template>
 
 <script>
 import IntroCard from './components/IntroCard.vue';
+import SkillsCard from './components/SkillsCard.vue';
 
 export default {
   name: 'app',
   components: {
-    IntroCard
+    IntroCard,
+    SkillsCard
   }
 };
 </script>
@@ -39,6 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 100vw;
   height: 100vh;
   background-color: var(--lightPrim);
@@ -87,9 +91,9 @@ button.text:hover {
 #inner {
   margin-top: 120px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   width: 60%;
 }
 
