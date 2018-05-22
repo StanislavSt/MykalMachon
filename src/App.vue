@@ -26,10 +26,14 @@ export default {
   --lightPrim: #cfd8dc;
   --prim: #607d8b;
   --textIcons: #ffffff;
-  --accent: #ffc107;
+  --accent: #bada55;
   --textPrim: #212121;
   --textSec: #757575;
   --divider: #bdbdbd;
+}
+
+body {
+  background-color: var(--lightPrim);
 }
 
 * {
@@ -43,9 +47,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-color: var(--lightPrim);
 }
 
 button {
