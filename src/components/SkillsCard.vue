@@ -6,28 +6,32 @@
     </div>
     <div class="skills">
       <p>Front End Web Development</p>
-      <span class="badge">
-        <i class="devicon-html5-plain"></i> HTML 5
-      </span>
-      <span class="badge">
-        <i class="devicon-css3-plain"></i> CSS3
-      </span>
-      <span class="badge">
-        <i class="devicon-javascript-plain"></i> ES6 Javascript
-      </span>
-      <span class="badge">
-        <i class="devicon-vuejs-plain"></i> Vue.js
-      </span>
+      <div class="badge-container">
+        <div class="badge">
+          <i class="devicon-html5-plain"></i> HTML 5
+        </div>
+        <div class="badge">
+          <i class="devicon-css3-plain"></i> CSS3
+        </div>
+        <div class="badge">
+          <i class="devicon-javascript-plain"></i> ES6 Javascript
+        </div>
+        <div class="badge">
+          <i class="devicon-vuejs-plain"></i> Vue.js
+        </div>
+      </div>
       <p>Back End Web Development</p>
-      <span class="badge">
-        <i class="devicon-nodejs-plain"></i> Node.js
-      </span>
-      <span class="badge">
-        <i class="devicon-express-original"></i> Express
-      </span>
-      <span class="badge">
-      <i class="devicon-mongodb-plain"></i> MongoDB
-      </span>
+      <div class="badge-container">
+        <div class="badge">
+          <i class="devicon-nodejs-plain"></i> Node.js
+        </div>
+        <div class="badge">
+          <i class="devicon-express-original"></i> Express
+        </div>
+        <div class="badge">
+        <i class="devicon-mongodb-plain"></i> MongoDB
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -68,16 +72,25 @@ h2 {
   margin-top: 0px;
   color: var(--textSec);
 }
+div.badge-container {
+  display: flex;
+  flex-direction: flex-start;
+  flex-wrap: wrap;
+}
 
-span.badge {
+div.badge {
   padding: 7px 16px 7px 16px;
   border-radius: 24px;
   background: var(--accent);
   color: black;
   margin-right: 20px;
-  line-height: 60px;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.11, 1.5, 0.71, 1.5);
+}
+
+div.badge:hover {
+  transform: scale(1.1);
 }
 
 .skills p {
