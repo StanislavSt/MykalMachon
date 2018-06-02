@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <div id="inner">
-      <IntroCard />
-      <SkillsCard />
+    <div class="container">
+      <div id="inner">
+        <IntroCard />
+        <SkillsCard />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import IntroCard from './components/IntroCard.vue';
-import SkillsCard from './components/SkillsCard.vue';
+import IntroCard from "./components/IntroCard.vue";
+import SkillsCard from "./components/SkillsCard.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     IntroCard,
     SkillsCard
@@ -22,9 +24,9 @@ export default {
 
 <style>
 :root {
-  --darkPrim: #455a64;
-  --lightPrim: #EFEFEF;
-  --prim: #FFFFFF;
+  --darkPrim: #b5c0cb;
+  --lightPrim: #efefef;
+  --prim: #ffffff;
   --textIcons: #ffffff;
   --accent: #bada55;
   --textPrim: #212121;
@@ -41,9 +43,12 @@ body {
 }
 
 #app {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
