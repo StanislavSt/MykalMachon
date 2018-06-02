@@ -7,6 +7,11 @@
         Web Developer and UI / UX Engineer
         </p>
       </div>
+      <div id='hidden-text' class="hidden-text">
+        <i class="fab fa-github fa-lg"></i>
+        <i class="fab fa-twitter fa-lg"></i>
+        <i class="fab fa-instagram fa-lg"></i>
+      </div>
     </div>
     <div id="picture" class='splitPic'>
       <img id='me' src="../assets/me.jpg" alt="Mykal Machon" >
@@ -31,23 +36,29 @@ export default {
       const card = document.getElementById("introCard");
       const text = document.getElementById("summary");
       const picture = document.getElementById("picture");
+      const top = document.getElementById("top");
+      const hiddenText = document.getElementById("hidden-text");
       const currHeight = card.clientHeight;
-      if (windowSize > 996) {
-        if (this.isSet) {
-          // card.setAttribute("style", "background: white; ");
+      // if (windowSize > 996) {
+      if (this.isSet) {
+        if (windowSize > 996) {
           text.setAttribute("style", "width: 50%;");
           picture.setAttribute("style", "width: 50%;");
-          // card.setAttribute("style", `height: unset;`);
-          this.isSet = false;
-        } else {
-          // card.setAttribute("style", "background: var(--darkPrim) ");
-          console.log(currHeight);
-          card.setAttribute("style", `height: ${currHeight}px;`);
-          text.setAttribute("style", "width: 100%;");
-          picture.setAttribute("style", "width: 0%;");
-          this.isSet = true;
+          top.setAttribute("style", "text-align: left;");
         }
+        hiddenText.setAttribute("style", "height: 0px;");
+        // card.setAttribute("style", `height: unset;`);
+        this.isSet = false;
+      } else {
+        console.log(currHeight);
+        card.setAttribute("style", `height: ${currHeight}px;`);
+        text.setAttribute("style", "width: 100%;");
+        picture.setAttribute("style", "width: 0%;");
+        hiddenText.setAttribute("style", "height: 100px;");
+        top.setAttribute("style", "text-align: center;");
+        this.isSet = true;
       }
+      // }
     }
   },
   data() {
@@ -120,6 +131,14 @@ div.splitPic img {
   border-bottom-right-radius: 5px;
 }
 
+.hidden-text {
+  font-size: 1rem;
+  font-weight: normal;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
 @media only screen and (max-width: 996px) {
   #introCard {
     padding: 40px;
@@ -138,7 +157,8 @@ div.splitPic img {
   }
 
   div.top {
-    padding-top: 4rem;
+    padding-top: 2rem;
+    text-align: center;
   }
 }
 
