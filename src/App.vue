@@ -23,8 +23,8 @@ export default {
 <style>
 :root {
   --darkPrim: #455a64;
-  --lightPrim: #cfd8dc;
-  --prim: #607d8b;
+  --lightPrim: #EFEFEF;
+  --prim: #FFFFFF;
   --textIcons: #ffffff;
   --accent: #bada55;
   --textPrim: #212121;

@@ -4,12 +4,8 @@
       <div class="top">
         Mykal Machon
         <p>
-          A Web Developer based in Abbotsford, British Columbia, Canada. Working for Aprario Group and attending the University of the Fraser Valley for a Bachelors of Science in Computer Infromation Systems. 
+        Web Developer and UI / UX Engineer
         </p>
-      </div>
-      <div class="bottom">
-        <button class="dark">Contact</button>
-        <button class="text">follow</button>
       </div>
     </div>
     <div id="picture" class='splitPic'>
@@ -48,25 +44,10 @@ export default {
   min-width: 868px;
   max-width: 1000px;
   background-color: var(--prim);
-  color: var(--textIcons);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: var(--textPrim);
+  box-shadow: 0px 15px 28px rgba(0,0,0,0.15);
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
-}
-
-.loadIn {
-  animation: scaleUp 600ms cubic-bezier(0.11, 1.22, 0.71, 1.09) 1;
-}
-
-@keyframes scaleUp {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .show {
@@ -76,20 +57,31 @@ export default {
 div.splitSum {
   width: 50%;
   padding: 20px;
-  font-size: 4em;
+  font-size: 2.8em;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items:center;
 }
 
-p {
-  font-size: 1rem;
-  font-weight: normal;
-}
 
 div.splitPic {
   width: 50%;
+}
+
+div.top{
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+div.top:hover{
+  font-size: 1.1em;
+}
+
+div.top p {
+  font-size: 1rem;
+  margin-top: 0.2em;
 }
 
 div.splitPic img {
@@ -118,6 +110,21 @@ div.splitPic img {
 
   div.top {
     padding-top: 4rem;
+  }
+}
+
+.loadIn {
+  animation: scaleUp 600ms cubic-bezier(0.11, 1.22, 0.71, 1.09) 1;
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 </style>
