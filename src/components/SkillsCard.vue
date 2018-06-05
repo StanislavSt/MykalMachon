@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'SkillsCard'
+  name: "SkillsCard"
 };
 </script>
 
@@ -24,21 +24,20 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items:flex-start;
+  align-items: flex-start;
   flex-wrap: nowrap;
   width: 100%;
   min-width: 868px;
   max-width: 1000px;
   background-color: var(--textIcons);
   color: var(--textPrim);
-  box-shadow: 0px 15px 28px rgba(0,0,0,0.15);
+  box-shadow: 0px 15px 28px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
   z-index: -2;
-
 }
 
-img{
+img {
   display: block;
   height: auto;
   min-height: 200px;
@@ -47,7 +46,7 @@ img{
   z-index: -1;
 }
 
-div.heading{
+div.heading {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -58,35 +57,34 @@ div.heading{
   border-top-right-radius: 5px;
 }
 
-.head-text{
+.head-text {
   position: absolute;
   text-align: left;
   width: 100%;
   height: 100%;
   padding: 50px;
-  z-index: 0;    
+  z-index: 0;
 }
 
 .head-text:before {
-   content: '';
-   display: inline-block;
-   height: 100%;
-   vertical-align: middle;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-.head-text h2{
+.head-text h2 {
   display: inline-block;
   margin: 0px;
   font-size: 2em;
   font-weight: bold;
   color: white;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.content{
+.content {
   height: 200px;
 }
-
 
 @media only screen and (max-width: 996px) {
   #skillsCard {
