@@ -3,7 +3,6 @@
     <div class="container">
       <div id="inner">
         <IntroCard />
-        <SkillsCard />
       </div>
     </div>
   </div>
@@ -11,13 +10,11 @@
 
 <script>
 import IntroCard from "./components/IntroCard.vue";
-import SkillsCard from "./components/SkillsCard.vue";
 
 export default {
   name: "app",
   components: {
     IntroCard,
-    SkillsCard
   }
 };
 </script>
