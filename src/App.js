@@ -55,8 +55,8 @@ const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  z-index: -1;
-  &:after {
+  z-index: 0;
+  &::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -65,6 +65,7 @@ const AppContainer = styled.div`
     height: 100%;
     animation: ${loadInUp} 1s ease-in-out;
     animation-fill-mode: forwards;
+    z-index: -1;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232d84ff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
@@ -75,7 +76,6 @@ const AppContainer = styled.div`
 
 const Card = styled.div`
   max-width: 500px;
-  z-index: 1;
   width: 50%;
   background-color: #ffffff;
   border-radius: 4px;
@@ -88,6 +88,7 @@ const Card = styled.div`
   @media (max-width: 925px) {
     margin-top: 30%;
     width: 90%;
+    max-width: 90%;
   }
 `;
 
