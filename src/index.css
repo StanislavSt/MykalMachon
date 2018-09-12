@@ -2,6 +2,10 @@
   --primary: #2d84ff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
