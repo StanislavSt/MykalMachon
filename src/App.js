@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
+import IconLink from './IconLink';
 
 class App extends Component {
   render() {
@@ -12,9 +13,26 @@ class App extends Component {
             Valley.
           </p>
           <p>
-            I currently work at Aprario Group part time, and am available for
-            small to medium sized software projects!
+            I'm working on a number of open source projects on my Github, I'm
+            experimenting on Codepen and I'm sharing my thoughts on Twitter!
           </p>
+          <Links>
+            <IconLink
+              icon="github"
+              size="2x"
+              link="https://github.com/MykalMachon"
+            />
+            <IconLink
+              icon="codepen"
+              size="2x"
+              link="https://codepen.io/mykalmachon/"
+            />
+            <IconLink
+              icon="twitter"
+              size="2x"
+              link="https://twitter.com/mykalmachon"
+            />
+          </Links>
         </Card>
       </AppContainer>
     );
@@ -90,6 +108,12 @@ const Card = styled.div`
     width: 90%;
     max-width: 90%;
   }
+`;
+
+const Links = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 `;
 
 export default App;
