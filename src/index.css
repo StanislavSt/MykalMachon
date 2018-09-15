@@ -1,5 +1,9 @@
 :root {
   --primary: #2d84ff;
+  --lightThemeBackground: #ffffff;
+  --lightThemeText: #333333;
+  --darkThemeBackground: #222222;
+  --darkThemeText: #ffffff;
 }
 
 * {
@@ -19,5 +23,5 @@ a {
 }
 
 a:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }

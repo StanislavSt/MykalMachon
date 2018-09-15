@@ -3,10 +3,18 @@ import styled, { keyframes } from 'styled-components';
 import IconLink from './IconLink';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDayTheme:
+        new Date().getHours() > 5 && new Date().getHours() < 19 ? true : false
+    };
+  }
+
   render() {
     return (
-      <AppContainer>
-        <Card>
+      <AppContainer themeType={false}>
+        <Card themeType={this.state.isDayTheme}>
           <h1>Mykal Machon</h1>
           <p>
             I'm a Web Developer and Student at the University of the Fraser
@@ -72,7 +80,10 @@ const AppContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: ${props =>
+    props.themeType
+      ? ' var(--lightThemeBackground)'
+      : ' var(--darkThemeBackground)'};
   z-index: 0;
   &::before {
     content: '';
@@ -95,7 +106,12 @@ const AppContainer = styled.div`
 const Card = styled.div`
   max-width: 500px;
   width: 50%;
-  background-color: #ffffff;
+  background-color: ${props =>
+    props.themeType
+      ? ' var(--lightThemeBackground)'
+      : ' var(--darkThemeBackground)'};
+  color: ${props =>
+    props.themeType ? ' var(--lightThemeText)' : ' var(--darkThemeText)'};
   border-radius: 4px;
   padding: 22px;
   opacity: 0;
