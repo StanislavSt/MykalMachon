@@ -12,9 +12,10 @@ class App extends Component {
   }
 
   render() {
+    const { isDayTheme } = this.state;
     return (
-      <AppContainer themeType={false}>
-        <Card themeType={this.state.isDayTheme}>
+      <AppContainer themeType={isDayTheme}>
+        <Card themeType={isDayTheme}>
           <h1>Mykal Machon</h1>
           <p>
             I'm a Web Developer and Student at the University of the Fraser
