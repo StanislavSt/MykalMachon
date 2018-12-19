@@ -1,12 +1,14 @@
-# Mykal Machon's Website
+### Mykal Machon's Personal Website
 
-This repository contains the source code for mykalmachon.com.
+This is my personal website! I'm planning for the site to include the following :
 
-Right now, mykalmachon.com is just a place for me to link out to my codepen, github, and twitter profiles and in turn allowing interesed users to find me where I am active!
+1. **My Work:** Things I've worked on in the past that I'm proud of!
+2. **My Projects**: Current projects I'm toying with on the side ( see NeedToDo & OpenInbox )
+3. **Blog Posts**: _Possibly?_ I've always wanted to have a regular writing schedule; if anything to keep my writing sharp and to keep me learning new things.
 
-However, in the future I hope to expand the site to include an experiments gallery as well as some other fun stuff.
+In addition to this I might add a few little fun tweaks here and there depending on how I'm feeling. 
 
-## The Stack :cake:
+### Planned Tech Stack
 
-- **React.js**
-  - styled-components
+- Gatsby.js + Netlify to provide a static-site that is re-built upon new content being pushed
+- Contentful / CMS to host the content itself and to allow for the seperated interface for data. 
