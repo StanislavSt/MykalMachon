@@ -15,14 +15,16 @@ const Contact = () => (
       <a href="https://twitter.com/mykalmachon">twitter</a> as well!
     </p>
     <FormStyles>
-      <form name="Contact" action="POST" data-netlify="true">
+      <form name="Contact" method="POST" data-netlify="true">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" placeholder="John Smith" />
         <label htmlFor="email">Email</label>
         <input type="email" name="email" placeholder="john@something.com" />
         <label htmlFor="message">Message</label>
         <textarea name="message" placeholder="Your message goes here" />
-        <button className="submit">Submit</button>
+        <button type="submit" className="submit">
+          Submit
+        </button>
       </form>
     </FormStyles>
   </Layout>
