@@ -7,7 +7,6 @@ import Archive from '../components/archive';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Home</h1>
     <Archive />
   </Layout>
 );

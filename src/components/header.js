@@ -24,7 +24,7 @@ const Header = () => (
           <p>{data.site.siteMetadata.description}</p>
         </div>
         <nav>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
           <Link to="/contact">Contact</Link>
         </nav>
       </header>
