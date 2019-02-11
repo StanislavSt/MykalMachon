@@ -1,3 +1,9 @@
+---
+slug: '/site-refresh'
+date: '2019-02-11'
+title: 'Site Refresh'
+---
+
 # Site Refresh!
 
 ### Hey! Thanks for checking out my new website!
