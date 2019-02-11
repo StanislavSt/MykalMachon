@@ -4,8 +4,6 @@ date: '2019-02-11'
 title: 'Site Refresh'
 ---
 
-# Site Refresh!
-
 ### Hey! Thanks for checking out my new website!
 
 I've been working on it over the past while and am hoping it will act as a sort of homebase for my interest in Technology, Development, and a few of my other interests.

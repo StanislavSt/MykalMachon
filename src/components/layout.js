@@ -7,6 +7,7 @@ import ProfilePicture from './profilePicture';
 
 const theme = {
   darkText: '#000000',
+  lightText: 'rgba(0,0,0,0.6)',
   primaryText: '#9D46F4',
   smallMargin: '21px',
   mediumMargin: '42px',
