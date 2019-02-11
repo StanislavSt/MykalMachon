@@ -1,6 +1,6 @@
 ---
 slug: '/working-with-gatsby'
-date: '2019-02-11'
+date: '2019-02-12'
 title: 'Working With Gatsby'
 ---
 

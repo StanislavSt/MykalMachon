@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 const POST_ARCHIVE_QUERY = graphql`
   query PostsQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       totalCount
       edges {
         node {
