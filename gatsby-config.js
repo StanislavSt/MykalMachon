@@ -1,12 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mykal Machon`,
-    description: `Mykal Machon is a Student & Developer currently attending UFV`,
-    author: `@MykalMachon`,
-    navItems: [
-      { name: 'posts', link: '/posts/' },
-      { name: 'about', link: '/about/' },
-    ],
+    description: `I am a full time CIS Student at UFV who develops webapps in his spare time.`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -31,6 +27,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-styled-components'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

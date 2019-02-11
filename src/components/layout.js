@@ -1,62 +1,36 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import Header from './header'
-import './layout.css'
+import Header from './header';
+import LayoutStyles from './styles/LayoutStyles';
+import ProfilePicture from './profilePicture';
+
+const theme = {
+  darkText: '#000000',
+  primaryText: '#9D46F4',
+  smallMargin: '21px',
+  mediumMargin: '42px',
+  fontSizeSmall: '14px', // Used for nav and other small text
+  fontSizeNormal: '16px', // used for normal body text
+  fontSizeHighlight: '18px', // used for semi highlighted text
+  fontSizeTitle: '24px', // used for titles on the site
+  smallBreakpoint: '800px'
+};
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-            navItems {
-              name
-              link
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title}>
-          {data.site.siteMetadata.navItems.map(item => {
-            return (
-              <Link
-                key={item.link}
-                to={item.link}
-                style={{
-                  margin: '0px 10px',
-                  color: 'black',
-                  fontSize: '14px',
-                  textTransform: 'uppercase',
-                }}
-              >
-                {item.name}
-              </Link>
-            )
-          })}
-        </Header>
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          {children}
+  <ThemeProvider theme={theme}>
+    <LayoutStyles>
+      <div className="siteContainer">
+        <div className="PictureCol">
+          <ProfilePicture />
         </div>
-      </>
-    )}
-  />
-)
+        <main>
+          <Header />
+          {children}
+        </main>
+      </div>
+    </LayoutStyles>
+  </ThemeProvider>
+);
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default Layout;
