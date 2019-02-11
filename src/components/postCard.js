@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 // TODO : ADD A LINK TO THE POST
 
@@ -8,7 +9,9 @@ const PostCard = ({ title, excerpt, slug, date, readTime }) => (
     <h4>
       {date} - <span>{readTime} Minutes</span>
     </h4>
-    <h2>{title}</h2>
+    <Link to={`/posts/${slug}`}>
+      <h2>{title}</h2>
+    </Link>
     <p>{excerpt}</p>
   </CardContainer>
 );
@@ -16,10 +19,17 @@ const PostCard = ({ title, excerpt, slug, date, readTime }) => (
 const CardContainer = styled.article`
   margin: ${props => props.theme.mediumMargin} 0px 0px 0px;
   max-width: 600px;
+  a {
+    text-decoration: none;
+  }
   h2 {
     color: ${props => props.theme.darkText};
     font-size: ${props => props.theme.fontSizeTitle};
     margin: 0px 0px ${props => props.theme.smallMargin} 0px;
+    transition: 0.12s all ease-in-out;
+    &:hover {
+      color: ${props => props.theme.lightText};
+    }
   }
   h4 {
     text-transform: uppercase;
