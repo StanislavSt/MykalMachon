@@ -1,18 +1,20 @@
 import { StaticQuery, graphql, Link } from 'gatsby';
 import React from 'react';
 
+const SITE_METADATA_QUERY = graphql`
+  query SiteInfoQuery {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+  }
+`;
+
 const Header = () => (
   <StaticQuery
-    query={graphql`
-      query SiteInfoQuery {
-        site {
-          siteMetadata {
-            title
-            description
-          }
-        }
-      }
-    `}
+    query={SITE_METADATA_QUERY}
     render={data => (
       <header>
         <div className="description">
