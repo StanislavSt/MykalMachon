@@ -15,7 +15,7 @@ const Contact = () => (
       <a href="https://twitter.com/mykalmachon">twitter</a> as well!
     </p>
     <FormStyles>
-      <form action="POST">
+      <form name="Contact" action="POST" data-netlify="true">
         <label htmlFor="name">Name</label>
         <input type="text" name="name" placeholder="John Smith" />
         <label htmlFor="email">Email</label>
