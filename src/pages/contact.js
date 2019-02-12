@@ -16,19 +16,20 @@ const Contact = () => (
     </p>
     <FormStyles>
       <form
-        name="contact"
-        method="POST"
+        name="Contact"
+        method="post"
+        action="/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
         <label>
           Your Name
-          <input type="text" name="name" placeholder="John Smith" />
+          <input name="name" type="text" placeholder="John Smith" />
         </label>
 
         <label>
           Your Email
-          <input type="email" name="email" placeholder="john@something.com" />
+          <input name="email" type="email" placeholder="john@something.com" />
         </label>
         <label>
           Message
