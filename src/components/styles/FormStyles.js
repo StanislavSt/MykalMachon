@@ -5,6 +5,10 @@ const FormStyles = styled.div`
     display: flex;
     flex-direction: column;
   }
+  label {
+    display: flex;
+    flex-direction: column;
+  }
   input {
     margin: 10px 0px;
     border-radius: 4px;
