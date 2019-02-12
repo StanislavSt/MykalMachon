@@ -12,6 +12,10 @@ const SITE_METADATA_QUERY = graphql`
   }
 `;
 
+const activeLinkStyles = {
+  color: '#9D46F4'
+};
+
 const Header = () => (
   <StaticQuery
     query={SITE_METADATA_QUERY}
@@ -24,8 +28,13 @@ const Header = () => (
           <p>{data.site.siteMetadata.description}</p>
         </div>
         <nav>
+          <Link to="/" activeStyle={activeLinkStyles}>
+            Home
+          </Link>
           {/* <Link to="/about">About</Link> */}
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" activeStyle={activeLinkStyles}>
+            Contact
+          </Link>
         </nav>
       </header>
     )}

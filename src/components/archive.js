@@ -26,7 +26,6 @@ const Archive = () => (
     query={POST_ARCHIVE_QUERY}
     render={({ allMarkdownRemark }) => (
       <section>
-        <h3>Recent Blog Posts : </h3>
         {allMarkdownRemark.edges.map(edge => (
           <PostCard
             key={edge.node.frontmatter.slug}
