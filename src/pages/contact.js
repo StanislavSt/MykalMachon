@@ -18,9 +18,9 @@ const Contact = () => (
       <form
         name="Contact"
         method="post"
-        action="/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
       >
         <label>
           Your Name
@@ -35,6 +35,7 @@ const Contact = () => (
           Message
           <textarea name="message" placeholder="Your message goes here" />
         </label>
+        <div data-netlify-recaptcha="true" />
         <button type="submit">Submit</button>
       </form>
     </FormStyles>
