@@ -23,10 +23,10 @@ const HeaderStyles = styled.header`
       margin: 0px ${props => props.theme.smallMargin} 0px
         ${props => props.theme.smallMargin};
       font-weight: bold;
-      text-decoration: none;
-      color: black;
       font-size: ${props => props.theme.fontSizeSmall};
-      /* Add Hover Effects */
+      &:last-of-type {
+        margin: 0px 0px 0px ${props => props.theme.smallMargin};
+      }
     }
   }
 
