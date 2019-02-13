@@ -24,6 +24,11 @@ const PostStyles = styled.article`
     color: rgba(0, 0, 0, 0.6);
   }
 
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.primaryText};
+  }
+
   /* CODE STYLING */
   /**
  * Based on copypasta from Remy Bach and Sarah Drasner
