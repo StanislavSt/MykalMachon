@@ -8,7 +8,6 @@ const LayoutStyles = styled.div`
   align-items: flex-start;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-
   div.siteContainer {
     margin: ${props => props.theme.mediumMargin}
       ${props => props.theme.smallMargin} 0px
@@ -28,19 +27,6 @@ const LayoutStyles = styled.div`
         height: 64px;
       }
     }
-    header {
-      width: 100%;
-      max-width: 865px;
-      display: flex;
-      justify-content: flex-start;
-      min-height: 90px;
-      margin-bottom: ${props => props.theme.mediumMargin};
-      a {
-        text-decoration: none;
-        color: ${props => props.theme.darkText};
-        /* Add Hover Effects */
-      }
-    }
 
     main {
       width: 100%;
@@ -48,37 +34,11 @@ const LayoutStyles = styled.div`
     }
   }
 
-  nav {
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 432px;
-    a {
-      margin: 0px ${props => props.theme.smallMargin} 0px
-        ${props => props.theme.smallMargin};
-      font-weight: bold;
-      text-decoration: none;
-      color: black;
-      font-size: ${props => props.theme.fontSizeSmall};
-      /* Add Hover Effects */
-    }
-  }
-
-  div.description {
-    height: 90px;
-    width: 100%;
-    max-width: 432px;
-    h1 {
-      font-size: ${props => props.theme.fontSizeHighlight};
-      margin: 0px;
-    }
-    p {
-      font-size: ${props => props.theme.fontSizeNormal};
-      margin: 21px 0px 0px 0px;
-      color: rgba(0, 0, 0, 0.6);
-    }
+  pre {
+    background: #011627;
+    color: #c792ea;
+    border-radius: 4px;
+    padding: 24 12px 24px 12px;
   }
 
   @media (max-width: ${props => props.theme.smallBreakpoint}) {
