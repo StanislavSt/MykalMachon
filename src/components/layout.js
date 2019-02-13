@@ -5,6 +5,7 @@ import Header from './header';
 import LayoutStyles from './styles/LayoutStyles';
 import ProfilePicture from './profilePicture';
 
+// Used for layout; color themes are going to be moved into css variables.
 const theme = {
   darkText: '#000000',
   lightText: 'rgba(0,0,0,0.6)',
