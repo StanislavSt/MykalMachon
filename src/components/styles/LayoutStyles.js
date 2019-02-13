@@ -14,7 +14,7 @@ const LayoutStyles = styled.div`
       ${props => props.theme.smallMargin};
     display: flex;
     width: 100%;
-    max-width: 950px;
+    max-width: 800px;
     flex-direction: row;
     div.PictureCol {
       width: 100%;
@@ -30,15 +30,8 @@ const LayoutStyles = styled.div`
 
     main {
       width: 100%;
-      max-width: 865px;
+      max-width: 720px;
     }
-  }
-
-  pre {
-    background: #011627;
-    color: #c792ea;
-    border-radius: 4px;
-    padding: 24 12px 24px 12px;
   }
 
   @media (max-width: ${props => props.theme.smallBreakpoint}) {

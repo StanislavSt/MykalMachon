@@ -27,7 +27,7 @@ export default class PostLayout extends Component {
           <section className="headerStyles">
             <h4>
               {markdownRemark.frontmatter.date} -{' '}
-              <span>{markdownRemark.timeToRead} Minutes</span>
+              <span>{markdownRemark.timeToRead} Minute Read</span>
             </h4>
             <h1>{markdownRemark.frontmatter.title}</h1>
           </section>

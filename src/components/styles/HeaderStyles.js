@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const HeaderStyles = styled.header`
   width: 100%;
-  max-width: 865px;
+  max-width: 720px;
   display: flex;
   justify-content: flex-start;
   min-height: 90px;
@@ -18,7 +18,7 @@ const HeaderStyles = styled.header`
     justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
-    max-width: 432px;
+    max-width: 400px;
     a {
       margin: 0px ${props => props.theme.smallMargin} 0px
         ${props => props.theme.smallMargin};
@@ -33,7 +33,7 @@ const HeaderStyles = styled.header`
   div.description {
     height: 90px;
     width: 100%;
-    max-width: 432px;
+    max-width: 400px;
     h1 {
       font-size: ${props => props.theme.fontSizeHighlight};
       margin: 0px;
