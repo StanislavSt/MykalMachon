@@ -16,7 +16,8 @@ const theme = {
   fontSizeNormal: '16px', // used for normal body text
   fontSizeHighlight: '18px', // used for semi highlighted text
   fontSizeTitle: '24px', // used for titles on the site
-  smallBreakpoint: '800px'
+  smallBreakpoint: '800px',
+  codeBackground: '#001526'
 };
 
 const Layout = ({ children }) => (
