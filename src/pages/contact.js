@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import FormStyles from '../components/styles/FormStyles';
+// import FormStyles from '../components/styles/FormStyles';
 
 const Contact = () => (
   <Layout>
@@ -14,7 +14,7 @@ const Contact = () => (
       you're more prone to social media, you can reach out on{' '}
       <a href="https://twitter.com/mykalmachon">twitter</a> as well!
     </p>
-    <FormStyles>
+    {/* <FormStyles>
       <form
         name="Contact"
         method="post"
@@ -43,7 +43,7 @@ const Contact = () => (
 
         <button type="submit">Submit</button>
       </form>
-    </FormStyles>
+    </FormStyles> */}
   </Layout>
 );
 
