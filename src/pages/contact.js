@@ -20,8 +20,11 @@ const Contact = () => (
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        data-netlify-recaptcha="true"
       >
+        <label style={{ display: 'none' }}>
+          Don’t fill this out if you're human: <input name="bot-field" />
+        </label>
+
         <label>
           Your Name
           <input name="name" type="text" placeholder="John Smith" />
@@ -31,11 +34,12 @@ const Contact = () => (
           Your Email
           <input name="email" type="email" placeholder="john@something.com" />
         </label>
+
         <label>
           Message
           <textarea name="message" placeholder="Your message goes here" />
         </label>
-        <div data-netlify-recaptcha="true" />
+
         <button type="submit">Submit</button>
       </form>
     </FormStyles>
