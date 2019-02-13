@@ -1,6 +1,8 @@
 import { StaticQuery, graphql, Link } from 'gatsby';
 import React from 'react';
 
+import HeaderStyles from './styles/HeaderStyles';
+
 const SITE_METADATA_QUERY = graphql`
   query SiteInfoQuery {
     site {
@@ -20,7 +22,7 @@ const Header = () => (
   <StaticQuery
     query={SITE_METADATA_QUERY}
     render={data => (
-      <header>
+      <HeaderStyles>
         <div className="description">
           <Link to="/">
             <h1>{data.site.siteMetadata.title}</h1>
@@ -36,7 +38,7 @@ const Header = () => (
             Contact
           </Link>
         </nav>
-      </header>
+      </HeaderStyles>
     )}
   />
 );
