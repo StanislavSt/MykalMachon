@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'gatsby';
 import CardStyles from './styles/CardStyles';
 
-// TODO : ADD A LINK TO THE POST
-
 const PostCard = ({ title, excerpt, slug, date, readTime }) => (
   <CardStyles>
     <h4>
