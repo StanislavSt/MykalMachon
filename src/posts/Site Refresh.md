@@ -10,7 +10,7 @@ I refreshed my website for a few reasons...
 
 The previous version of this website was a very basic, poorly designed, react app. It wasn't at all representative of what my abilities were as a developer so I wanted to make something better!
 
-I'd been hearing a lot about [Gatsby.js](https://gatsby.org) and wanted to give it a try. I figured building a personal website would be a great way to take it for a test drive (which it was).
+I'd been hearing a lot about [Gatsby.js](https://gatsbyjs.org) and wanted to give it a try. I figured building a personal website would be a great way to take it for a test drive (which it was).
 
 ### Plans for the Future
 
