@@ -30,7 +30,6 @@ const PostStyles = styled.article`
     color: ${props => props.theme.lightText};
   }
   a {
-    text-decoration: none;
     color: ${props => props.theme.primaryText};
   }
 
