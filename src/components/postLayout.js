@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { graphql } from 'gatsby';
+import SEO from './seo';
 
 import Layout from './layout';
 import PostStyles from './styles/PostStyles';
@@ -23,6 +24,10 @@ export default class PostLayout extends Component {
     const { markdownRemark } = this.props.data;
     return (
       <Layout>
+        <SEO
+          title={markdownRemark.frontmatter.title}
+          keywords={['Mykal Machon', `${markdownRemark.frontmatter.title}`]}
+        />
         <PostStyles>
           <section className="headerStyles">
             <h4>
