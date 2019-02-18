@@ -6,7 +6,7 @@ title: 'Preparing for Battlesnake'
 
 ![The Battlesnake Logo](../images/posts/battlesnake_logo.png)
 
-This year's Battlesnake competition takes place on march 2nd at the Victoria Convention Center and I've got quite a bit to of preparation to do before then.
+This year's Battlesnake competition takes place on march 2nd at the Victoria Convention Center and I've got quite a bit of preparation to do before then.
 
 ### But Wait a second... what's Battlesnake?
 
