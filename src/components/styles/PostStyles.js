@@ -24,15 +24,33 @@ const PostStyles = styled.article`
     color: rgba(0, 0, 0, 0.6);
   }
 
+  ul,
+  ol,
+  li {
+    color: ${props => props.theme.lightText};
+  }
   a {
     text-decoration: none;
     color: ${props => props.theme.primaryText};
   }
 
+  blockquote {
+    position: relative;
+    font-style: italic;
+    &:before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 7px;
+      height: 100%;
+      background: ${props => props.theme.primaryText};
+    }
+  }
+
   /* CODE STYLING */
-  /**
- * Based on copypasta from Remy Bach and Sarah Drasner
- */
+
   pre {
     padding: 24px 12px 24px 12px;
     color: yellow;
