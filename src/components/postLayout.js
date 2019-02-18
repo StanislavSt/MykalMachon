@@ -10,6 +10,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       timeToRead
+      excerpt
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
@@ -26,6 +27,7 @@ export default class PostLayout extends Component {
       <Layout>
         <SEO
           title={markdownRemark.frontmatter.title}
+          description={markdownRemark.excerpt}
           keywords={['Mykal Machon', `${markdownRemark.frontmatter.title}`]}
         />
         <PostStyles>
