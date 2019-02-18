@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-// import FormStyles from '../components/styles/FormStyles';
+import FormStyles from '../components/styles/FormStyles';
 
 const Contact = () => (
   <Layout>
@@ -14,14 +14,8 @@ const Contact = () => (
       you're more prone to social media, you can reach out on{' '}
       <a href="https://twitter.com/mykalmachon">twitter</a> as well!
     </p>
-    {/* <FormStyles>
-      <form
-        name="Contact"
-        method="post"
-        action="/messageSent"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
+    <FormStyles>
+      <form name="Contact" method="post" data-netlify="true">
         <label style={{ display: 'none' }}>
           Don’t fill this out if you're human: <input name="bot-field" />
         </label>
@@ -43,7 +37,7 @@ const Contact = () => (
 
         <button type="submit">Submit</button>
       </form>
-    </FormStyles> */}
+    </FormStyles>
   </Layout>
 );
 

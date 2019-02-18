@@ -2,6 +2,8 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Header from './header';
+import Footer from './footer';
+
 import LayoutStyles from './styles/LayoutStyles';
 import ProfilePicture from './profilePicture';
 
@@ -12,6 +14,7 @@ const theme = {
   primaryText: '#9D46F4',
   smallMargin: '21px',
   mediumMargin: '42px',
+  largeMargin: '84px',
   fontSizeSmall: '14px', // Used for nav and other small text
   fontSizeNormal: '16px', // used for normal body text
   fontSizeHighlight: '18px', // used for semi highlighted text
@@ -30,6 +33,7 @@ const Layout = ({ children }) => (
         <main>
           <Header />
           {children}
+          <Footer />
         </main>
       </div>
     </LayoutStyles>
