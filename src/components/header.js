@@ -33,10 +33,12 @@ const Header = () => (
           <Link to="/" activeStyle={activeLinkStyles}>
             Home
           </Link>
-          {/* <Link to="/about">About</Link> */}
-          <Link to="/contact" activeStyle={activeLinkStyles}>
-            Contact
+          <Link to="/about" activeStyle={activeLinkStyles}>
+            About
           </Link>
+          {/* <Link to="/contact" activeStyle={activeLinkStyles}>
+            Contact
+          </Link> */}
         </nav>
       </HeaderStyles>
     )}
