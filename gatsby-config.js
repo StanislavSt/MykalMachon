@@ -49,6 +49,12 @@ module.exports = {
         icon: `src/images/icon.png` // This path is relative to the root of the site.
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-134738137-1'
+      }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     // `gatsby-plugin-remove-serviceworker`,
