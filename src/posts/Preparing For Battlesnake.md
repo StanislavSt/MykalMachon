@@ -6,7 +6,7 @@ title: 'Preparing for Battlesnake'
 
 ![The Battlesnake Logo](../images/posts/battlesnake_logo.png)
 
-This year's Battlesnake competition takes place on march 2nd at the Victoria Convention Center and I've got quite a bit of preparation to do before then.
+This year's Battlesnake competition takes place on March 2nd 2019 at the Victoria Convention Center and I've got quite a bit of preparation to do before then.
 
 ### But Wait a second... what's Battlesnake?
 
@@ -22,9 +22,9 @@ Sounds fun right? I thought so! If you're still not convinced, [here's a video](
 
 ### My Goals for Battlesnake This Year
 
-Since I've got the fundamentals down, I'm taking battlesnake as an opportunity to spend some time sharpening my pathfinding skills and getting a snake that can at least sort of stand on its own two, metaphorical, legs.
+Since I've got the fundamentals down, I'm taking battlesnake as an opportunity to spend some time sharpening my pathfinding skills and programming a snake that can at least sort of stand on its own two, metaphorical, legs.
 
-While in a perfect world I'd be spending hours on this a night, I've got midterms the week of and the week after battlesnake so I'm going to have to prioritize a little bit.
+While, in a perfect world, I'd be spending hours on this a night, I've got midterms the week of and the week after battlesnake so I'm going to have to prioritize a little bit.
 
 #### Priority #1: Self Sustaining
 
@@ -56,7 +56,7 @@ At this level my snake should be able to:
 2. Be operating off a trained neural network. Most likely something built through OpenAI or Clarifai
 3. Capability to autonomously improve or "learn" after each match through the use of machine learning.
 
-I've never used any AI tech beyond using some very simple pre-trained facial recognition models so this would be a tonne of fun to play around with, but may be a little too far out of my wheelhouse to be achievable in two weeks.
+I've never used any AI tech beyond using some very simple pre-trained facial recognition models. This would be a tonne of fun to play around with, but may be a little too far out of my wheelhouse to be achievable in two weeks.
 
 ### Closing Thoughts
 
@@ -66,4 +66,4 @@ Despite our lack of knowledge, We had a tonne of fun! The event's atmosphere was
 
 It's crazy to think that just two years ago I knew absolutely nothing about any of the technology I use on an almost daily basis today. I sometimes feel like I'm constantly losing a race with technology; Like I can never learn enough, fast enough, to feel caught up and knowledgeable.
 
-Despite this, Being able to look back on my skills in 2017 and contrast them to my skills today through the lens of something like battlesnake has really inspired me to prove to myself just how far I have come in that time. I can't wait to start this years snake!
+That said, Being able to look back on my skills in 2017 and contrast them to my skills today through the lens of something like battlesnake has really inspired me to prove to myself just how far I have come in that time. I can't wait to start this years snake!
