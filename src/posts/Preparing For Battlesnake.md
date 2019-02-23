@@ -67,3 +67,5 @@ Despite our lack of knowledge, We had a tonne of fun! The event's atmosphere was
 It's crazy to think that just two years ago I knew absolutely nothing about any of the technology I use on an almost daily basis today. I sometimes feel like I'm constantly losing a race with technology; Like I can never learn enough, fast enough, to feel caught up and knowledgeable.
 
 That said, Being able to look back on my skills in 2017 and contrast them to my skills today through the lens of something like battlesnake has really inspired me to prove to myself just how far I have come in that time. I can't wait to start this years snake!
+
+Look out for my next few posts! I should be doing a post-mortem on the battlesnake meetup wherein I will summarize how everything went!
