@@ -15,6 +15,7 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
+        tags
       }
     }
   }
@@ -23,12 +24,20 @@ export const query = graphql`
 export default class PostLayout extends Component {
   render() {
     const { markdownRemark } = this.props.data;
+    const tagsArray = markdownRemark.frontmatter.tags
+      .replace(' ', '')
+      .split(',');
+    const tags = [
+      'Mykal Machon',
+      markdownRemark.frontmatter.title,
+      ...tagsArray,
+    ];
     return (
       <Layout>
         <SEO
           title={markdownRemark.frontmatter.title}
           description={markdownRemark.excerpt}
-          keywords={['Mykal Machon', `${markdownRemark.frontmatter.title}`]}
+          keywords={tags}
         />
         <PostStyles>
           <section className="headerStyles">
@@ -41,7 +50,7 @@ export default class PostLayout extends Component {
 
           <section
             dangerouslySetInnerHTML={{
-              __html: markdownRemark.html
+              __html: markdownRemark.html,
             }}
           />
         </PostStyles>
