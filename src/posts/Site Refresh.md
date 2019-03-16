@@ -2,6 +2,7 @@
 slug: '/site-refresh'
 date: '2019-02-11'
 title: 'Site Refresh & Plans for the Future'
+tags: 'blog, personal'
 ---
 
 ### Why I Refreshed My Website
