@@ -11,7 +11,7 @@ const PostStyles = styled.article`
     h4 {
       text-transform: uppercase;
       font-size: ${props => props.theme.fontSizeSmall};
-      color: rgba(0, 0, 0, 0.6);
+      color: ${props => props.theme.lightText};
       margin: 0px 0px 8px 0px;
       font-weight: 400;
       span {
@@ -21,7 +21,7 @@ const PostStyles = styled.article`
   }
   p {
     font-size: ${props => props.theme.fontSizeNormal};
-    color: rgba(0, 0, 0, 0.6);
+    color: ${props => props.theme.lightText};
   }
 
   ul,
@@ -81,10 +81,9 @@ const PostStyles = styled.article`
   }
 
   /* Inline code */
-  :not(pre) > code {
+  code {
     border-radius: 0.3em;
     background: ${props => props.theme.codeBackground};
-    color: black;
     padding: 0.15em 0.2em 0.05em;
     white-space: normal;
   }
