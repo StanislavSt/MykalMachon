@@ -2,6 +2,7 @@
 slug: '/preparing-for-battlesnake'
 date: '2019-02-18'
 title: 'Preparing for Battlesnake'
+tags: 'blog, battlesnake, 2019, sendwithus'
 ---
 
 ![The Battlesnake Logo](../images/posts/battlesnake_logo.png)

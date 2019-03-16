@@ -10,7 +10,7 @@ import ProfilePicture from './profilePicture';
 // Used for layout; color themes are going to be moved into css variables.
 const theme = {
   darkText: '#000000',
-  lightText: 'rgba(0,0,0,0.6)',
+  lightText: '#666666',
   primaryText: '#9D46F4',
   smallMargin: '21px',
   mediumMargin: '42px',
@@ -20,7 +20,7 @@ const theme = {
   fontSizeHighlight: '18px', // used for semi highlighted text
   fontSizeTitle: '24px', // used for titles on the site
   smallBreakpoint: '800px',
-  codeBackground: '#001526'
+  codeBackground: 'rgba(0,0,0,0.12)',
 };
 
 const Layout = ({ children }) => (
