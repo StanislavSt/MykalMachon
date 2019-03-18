@@ -8,7 +8,9 @@ const LayoutStyles = styled.div`
   align-items: flex-start;
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5em;
+  p {
+    line-height: 1.5em;
+  }
   div.siteContainer {
     margin: ${props => props.theme.mediumMargin}
       ${props => props.theme.smallMargin} 0px
