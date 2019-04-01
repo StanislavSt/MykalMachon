@@ -7,12 +7,22 @@ const CardStyles = styled.article`
     text-decoration: none;
   }
   h2 {
+    position: relative;
+    display: inline-block;
     color: ${props => props.theme.darkText};
     font-size: ${props => props.theme.fontSizeTitle};
     margin: 0px 0px ${props => props.theme.smallMargin} 0px;
     transition: 0.12s all ease-in-out;
-    &:hover {
-      color: ${props => props.theme.lightText};
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 100%;
+      background-color: ${props => props.theme.primaryText};
+      transition: 0.2s width ease-in-out;
     }
   }
   h4 {
@@ -28,6 +38,14 @@ const CardStyles = styled.article`
   p {
     font-size: ${props => props.theme.fontSizeNormal};
     color: rgba(0, 0, 0, 0.6);
+  }
+  &:hover {
+    h2 {
+      color: white;
+      &::before {
+        width: 100%;
+      }
+    }
   }
   @media (max-width: ${props => props.theme.smallBreakpoint}) {
     max-width: initial;
