@@ -10,6 +10,28 @@ const LayoutStyles = styled.div`
   font-family: 'Open Sans', sans-serif;
   p {
     line-height: 1.5em;
+    margin-bottom: 1.7em;
+    font-size: ${props => props.theme.fontSizeNormal};
+    a {
+      position: relative;
+      color: ${props => props.theme.primaryText};
+      text-decoration: none;
+      &::before {
+        background-color: ${props => props.theme.primaryText};
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0%;
+        transition: 0.2s width ease-in-out;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
   }
   div.siteContainer {
     margin: ${props => props.theme.mediumMargin}
