@@ -16,7 +16,7 @@ const Contact = () => (
     </h1>
     <p>Nice to e-meet you!</p>
     <p>
-      I'm a university student and software developer from British Columbia,
+      I'm a university student and software engineer from British Columbia,
       Canada. When I'm not studying, I'm either working at{' '}
       <a href="https://aprario.com">Aprario Group</a>, a community focused
       investment company, or tinkering with one of my many{' '}
