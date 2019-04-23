@@ -16,7 +16,7 @@ const theme = {
   mediumMargin: '42px',
   largeMargin: '84px',
   fontSizeSmall: '14px', // Used for nav and other small text
-  fontSizeNormal: '16px', // used for normal body text
+  fontSizeNormal: '18px', // used for normal body text
   fontSizeHighlight: '18px', // used for semi highlighted text
   fontSizeTitle: '24px', // used for titles on the site
   smallBreakpoint: '800px',
