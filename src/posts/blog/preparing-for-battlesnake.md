@@ -1,8 +1,11 @@
 ---
 layout: blog
 title: Preparing for Battlesnake
+slug: preparing-for-battlesnake
+tags: send-with-us, test-tag, help
 date: 2019-02-18T23:32:14.597Z
 ---
+
 This year's Battlesnake competition takes place on March 2nd 2019 at the Victoria Convention Center and I've got quite a bit of preparation to do before then.
 
 ### But Wait a second... what's Battlesnake?
