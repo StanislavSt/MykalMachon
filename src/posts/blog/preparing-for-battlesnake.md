@@ -4,7 +4,8 @@ title: Preparing for Battlesnake
 slug: preparing-for-battlesnake
 tags:
   - send-with-us
-  - test-again
+  - battlesnake
+  - narrative-post
 date: 2019-02-18T23:32:14.597Z
 ---
 
