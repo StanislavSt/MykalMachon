@@ -1,7 +1,7 @@
 ---
 slug: '/windows-to-linux'
 date: '2019-03-19'
-title: 'From Windows to Linux: Easier than expected'
+title: 'test'
 tags: 'blog, linux, windows, development, gaming'
 ---
 
