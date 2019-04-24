@@ -24,13 +24,10 @@ export const query = graphql`
 export default class PostLayout extends Component {
   render() {
     const { markdownRemark } = this.props.data;
-    const tagsArray = markdownRemark.frontmatter.tags
-      .replace(' ', '')
-      .split(',');
     const tags = [
       'Mykal Machon',
       markdownRemark.frontmatter.title,
-      ...tagsArray,
+      ...markdownRemark.frontmatter.tags,
     ];
     return (
       <Layout>

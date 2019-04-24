@@ -2,7 +2,9 @@
 layout: blog
 title: Preparing for Battlesnake
 slug: preparing-for-battlesnake
-tags: send-with-us, test-tag, help
+tags:
+  - send-with-us
+  - test-again
 date: 2019-02-18T23:32:14.597Z
 ---
 
