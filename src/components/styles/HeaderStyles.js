@@ -13,7 +13,7 @@ const HeaderStyles = styled.header`
   }
 
   nav {
-    height: 90px;
+    min-height: 90px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -31,7 +31,7 @@ const HeaderStyles = styled.header`
   }
 
   div.description {
-    height: 90px;
+    min-height: 90px;
     width: 100%;
     max-width: 400px;
     h1 {

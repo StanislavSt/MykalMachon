@@ -17,14 +17,14 @@ exports.createPages = ({ graphql, actions }) => {
           }
         }
       }
-    `).then(results => {
+    `).then((results) => {
       results.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
           path: `/posts${node.frontmatter.slug}`,
           component: path.resolve(`./src/components/postLayout.js`),
           context: {
-            slug: node.frontmatter.slug
-          }
+            slug: node.frontmatter.slug,
+          },
         });
       });
       resolve();
