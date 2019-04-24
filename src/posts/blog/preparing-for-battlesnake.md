@@ -4,9 +4,11 @@ title: Preparing for Battlesnake
 slug: preparing-for-battlesnake
 tags:
   - send-with-us
-  - test-again
+  - battlesnake
+  - narrative-post
 date: 2019-02-18T23:32:14.597Z
 ---
+![battlesnake game screenshot](/images/uploads/1_fp-hi11o9hgadvflohwlhq.png "My battlesnake AI at work (the pink one)")
 
 This year's Battlesnake competition takes place on March 2nd 2019 at the Victoria Convention Center and I've got quite a bit of preparation to do before then.
 
