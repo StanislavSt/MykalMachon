@@ -14,7 +14,6 @@ const Contact = () => (
         👋
       </span>
     </h1>
-    <p>Nice to e-meet you!</p>
     <p>
       I'm a university student and software engineer from British Columbia,
       Canada. When I'm not studying, I'm either working at{' '}
