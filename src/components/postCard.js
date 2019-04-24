@@ -7,7 +7,7 @@ const PostCard = ({ title, excerpt, slug, date, readTime }) => (
     <h4>
       {date} - <span>{readTime} Minute Read</span>
     </h4>
-    <Link to={`/posts${slug}`}>
+    <Link to={`/posts/${slug}`}>
       <h2>{title}</h2>
     </Link>
     <p>{excerpt}</p>
