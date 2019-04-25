@@ -28,6 +28,10 @@ const PostStyles = styled.article`
   ol,
   li {
     color: ${(props) => props.theme.lightText};
+    font-size: ${(props) => props.theme.fontSizeNormal};
+    line-height: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
   }
   a {
     color: ${(props) => props.theme.primaryText};
