@@ -2,35 +2,35 @@ import styled from 'styled-components';
 
 const PostStyles = styled.article`
   section.headerStyles {
-    margin: 0px 0px ${props => props.theme.mediumMargin} 0px;
+    margin: 0px 0px ${(props) => props.theme.mediumMargin} 0px;
     h1 {
-      color: ${props => props.theme.darkText};
+      color: ${(props) => props.theme.darkText};
       font-size: 36px;
-      margin: 0px 0px ${props => props.theme.smallMargin} 0px;
+      margin: 0px 0px ${(props) => props.theme.smallMargin} 0px;
     }
     h4 {
       text-transform: uppercase;
-      font-size: ${props => props.theme.fontSizeSmall};
-      color: ${props => props.theme.lightText};
+      font-size: ${(props) => props.theme.fontSizeSmall};
+      color: ${(props) => props.theme.lightText};
       margin: 0px 0px 8px 0px;
       font-weight: 400;
       span {
-        color: ${props => props.theme.primaryText};
+        color: ${(props) => props.theme.primaryText};
       }
     }
   }
   p {
-    font-size: ${props => props.theme.fontSizeNormal};
-    color: ${props => props.theme.lightText};
+    font-size: ${(props) => props.theme.fontSizeNormal};
+    color: ${(props) => props.theme.lightText};
   }
 
   ul,
   ol,
   li {
-    color: ${props => props.theme.lightText};
+    color: ${(props) => props.theme.lightText};
   }
   a {
-    color: ${props => props.theme.primaryText};
+    color: ${(props) => props.theme.primaryText};
   }
 
   blockquote {
@@ -44,8 +44,12 @@ const PostStyles = styled.article`
       left: -40px;
       width: 7px;
       height: 100%;
-      background: ${props => props.theme.primaryText};
+      background: ${(props) => props.theme.primaryText};
     }
+  }
+
+  img {
+    width: 100%;
   }
 
   /* CODE STYLING */
@@ -53,13 +57,13 @@ const PostStyles = styled.article`
   pre {
     padding: 24px 12px 24px 12px;
     color: yellow;
-    background: ${props => props.theme.codeBackground};
+    background: ${(props) => props.theme.codeBackground};
     border-radius: 6px;
   }
 
   pre > code {
     color: white;
-    background: ${props => props.theme.codeBackground};
+    background: ${(props) => props.theme.codeBackground};
     font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New,
       monospace;
     font-feature-settings: normal;
@@ -83,7 +87,7 @@ const PostStyles = styled.article`
   /* Inline code */
   code {
     border-radius: 0.3em;
-    background: ${props => props.theme.codeBackground};
+    background: ${(props) => props.theme.codeBackground};
     padding: 0.15em 0.2em 0.05em;
     white-space: normal;
   }
