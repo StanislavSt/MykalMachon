@@ -29,7 +29,7 @@ All of this in mind, as a self-admitted VR lover with an optimistic viewpoint,  
 
 There is one pivotal device that I'm willing to bet will make a significant splash in the VR market this year...
 
-**The Oculus Quest :** a fully mobile, tether-less, 6 Degrees of Freedom (or 6DOF), VR headset by Oculus. 
+\***\*[**The Oculus Quest **](https://www.oculus.com/quest/?locale=en_US)**:\*\* a fully mobile, tether-less, 6 Degrees of Freedom (or 6DOF), VR headset by Oculus. 
 
 I know that was a lot of jargon I just threw at you, and I'd like to breakdown exactly what the quest is and why I think it's such a huge deal for the state of VR in 2019. 
 
@@ -43,7 +43,13 @@ Now that you know what the Oculus Quest is, let's get into why I think it could 
 
 The Oculus Quest starts at only $399 USD which I think is an absolute steal if Oculus delivers on all their promises. at $399 the quest is poised to take on consoles like the Nintendo Switch, Xbox One S, and PS4 Pro which are all priced right around the same.  
 
-This takes high quality VR out of the $1000 - $1500 USD range that you would currently pay for a VR gaming rig and puts it squarely in a much more attractive and attainable price range. 
+This takes high quality VR out of the [$1000 - $1500 USD ](https://www.pcmag.com/roundup/341963/the-best-computers-for-the-oculus-rift-vr-headset)range that you would currently pay for a VR gaming rig and puts it squarely in a much more attractive and attainable price range. 
+
+### Quality Driven
+
+Oculus has stated that it intends to insure that all content on the quest is [strictly vetted and reviewed internally before being added to the store.](https://uploadvr.com/quest-curation-rubin/) 
+
+This extra step is taken to make sure that every single thing on the Quest's store works well and will put the system's best foot forward in every interaction possible. 
 
 ### Powerful
 
@@ -57,13 +63,11 @@ You can take this thing anywhere, I mean it, Anywhere. To your friends house? su
 
 This portability can contribute to the virality of the quest especially if there are a few good applications to get people in and having fun asap. 
 
-Quality Driven
-
 ## Things That Could Ruin VR in 2019
 
 ### Hardware / Software Issues
 
-I would be ignorant not to mention the massive lead in both hardware and software needed to make the Oculus Quest possible. I would also be naive to not acknowledge that when new hardware comes out like this, especially first-generation technology \*cough\* apple-watch gen 1 \*cough\* there tends to be some pretty substantial issues with the hardware. 
+I would be ignorant not to mention the massive lead in both hardware and software needed to make the Oculus Quest possible. I would also be naive to not acknowledge that when new hardware comes out like this, especially first-generation technology \*cough\* apple-watch gen 1 battery \*cough\* there tends to be some pretty substantial issues with the hardware. 
 
 ### Lack of Product Knowledge / Understanding
 
