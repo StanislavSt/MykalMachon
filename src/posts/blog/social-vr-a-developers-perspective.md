@@ -1,11 +1,12 @@
 ---
 layout: blog
-title: Why 2019 is the year of Virtual Reality
-slug: why-2019-is-the-year-of-virtual-reality
+title: Why I'm Excited for VR in 2019
+slug: why-im-Excited-for-vr-in-2019
 tags:
   - VR
   - gaming
   - narrative
+  - speculative
 date: 2019-04-25T01:15:15.672Z
 ---
 ![Man In VR Headset](/images/uploads/oculus-rift-pic.jpg "VR Picture by Lux Interaction on Unsplash")
