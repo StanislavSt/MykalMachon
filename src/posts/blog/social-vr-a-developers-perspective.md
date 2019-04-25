@@ -29,7 +29,7 @@ All of this in mind, as a self-admitted VR lover with an optimistic viewpoint,  
 
 There is one pivotal device that I'm willing to bet will make a significant splash in the VR market this year...
 
-\***\*[**The Oculus Quest **](https://www.oculus.com/quest/?locale=en_US)**:\*\* a fully mobile, tether-less, 6 Degrees of Freedom (or 6DOF), VR headset by Oculus. 
+[The Oculus Quest](https://www.oculus.com/quest/?locale=en_US): a fully mobile, tether-less, 6 Degrees of Freedom (or 6DOF), VR headset by Oculus. 
 
 I know that was a lot of jargon I just threw at you, and I'd like to breakdown exactly what the quest is and why I think it's such a huge deal for the state of VR in 2019. 
 
