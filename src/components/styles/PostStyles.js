@@ -22,6 +22,7 @@ const PostStyles = styled.article`
   p {
     font-size: ${(props) => props.theme.fontSizeNormal};
     color: ${(props) => props.theme.lightText};
+    line-height: 1.7;
   }
 
   ul,
