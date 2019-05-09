@@ -12,7 +12,7 @@ const theme = {
   darkText: '#000000',
   lightText: '#666666',
   primaryText: '#9D46F4',
-  smallMargin: '21px',
+  smallMargin: '12px',
   mediumMargin: '42px',
   largeMargin: '84px',
   fontSizeSmall: '14px', // Used for nav and other small text

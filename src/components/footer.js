@@ -6,15 +6,18 @@ const FooterStyles = styled.footer`
   width: 100%;
   flex-direction: row;
   flex-wrap: true;
-  margin: ${props => props.theme.mediumMargin} 0px
-    ${props => props.theme.mediumMargin} 0px;
-
+  margin: ${(props) => props.theme.mediumMargin} 0px
+    ${(props) => props.theme.mediumMargin} 23px;
   a {
-    margin: 0px ${props => props.theme.smallMargin} 0px 0px;
-    font-size: ${props => props.theme.fontSizeSmall};
+    margin: 0px ${(props) => props.theme.smallMargin} 0px 0px;
+    font-size: ${(props) => props.theme.fontSizeSmall};
     &:first-of-type {
-      margin: 0px ${props => props.theme.smallMargin} 0px 0px;
+      margin: 0px ${(props) => props.theme.smallMargin} 0px 0px;
     }
+  }
+  @media (max-width: ${(props) => props.theme.smallBreakpoint}) {
+    margin: ${(props) => props.theme.mediumMargin} 0px
+      ${(props) => props.theme.mediumMargin} 0px;
   }
 `;
 

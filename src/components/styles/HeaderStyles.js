@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const HeaderStyles = styled.header`
   width: 100%;
   max-width: 720px;
+  padding-left: 23px;
   display: flex;
   justify-content: flex-start;
   min-height: 90px;
@@ -41,6 +42,13 @@ const HeaderStyles = styled.header`
       font-size: ${(props) => props.theme.fontSizeNormal};
       margin: 21px 0px 0px 0px;
       color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  @media (max-width: ${(props) => props.theme.smallBreakpoint}) {
+    padding-left: 0px;
+    nav {
+      justify-content: flex-start;
     }
   }
 `;
