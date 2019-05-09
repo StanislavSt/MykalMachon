@@ -4,13 +4,11 @@ import CardStyles from './styles/CardStyles';
 
 const PostCard = ({ title, excerpt, slug, date, readTime }) => (
   <CardStyles>
-    <h4>
-      {date} - <span>{readTime} Minute Read</span>
-    </h4>
     <Link to={`/posts/${slug}`}>
+      <h4>{date}</h4>
       <h2>{title}</h2>
+      <p>{excerpt}</p>
     </Link>
-    <p>{excerpt}</p>
   </CardStyles>
 );
 

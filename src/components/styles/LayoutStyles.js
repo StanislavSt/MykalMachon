@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const LayoutStyles = styled.div`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -9,15 +8,15 @@ const LayoutStyles = styled.div`
   justify-content: center;
   font-family: 'Open Sans', sans-serif;
   p {
-    line-height: 1.5em;
+    line-height: 1.7;
     margin-bottom: 1.7em;
-    font-size: ${props => props.theme.fontSizeNormal};
+    font-size: ${(props) => props.theme.fontSizeNormal};
     a {
       position: relative;
-      color: ${props => props.theme.primaryText};
+      color: ${(props) => props.theme.primaryText};
       text-decoration: none;
       &::before {
-        background-color: ${props => props.theme.primaryText};
+        background-color: ${(props) => props.theme.primaryText};
         content: '';
         position: absolute;
         bottom: 0;
@@ -34,9 +33,9 @@ const LayoutStyles = styled.div`
     }
   }
   div.siteContainer {
-    margin: ${props => props.theme.mediumMargin}
-      ${props => props.theme.smallMargin} 0px
-      ${props => props.theme.smallMargin};
+    margin: ${(props) => props.theme.mediumMargin}
+      ${(props) => props.theme.smallMargin} 0px
+      ${(props) => props.theme.smallMargin};
     display: flex;
     width: 100%;
     max-width: 800px;
@@ -44,7 +43,7 @@ const LayoutStyles = styled.div`
     div.PictureCol {
       width: 100%;
       max-width: 64px;
-      margin-right: ${props => props.theme.smallMargin};
+      margin-right: ${(props) => props.theme.smallMargin};
       height: 90px;
       img {
         border-radius: 32px;
@@ -59,17 +58,17 @@ const LayoutStyles = styled.div`
     }
   }
 
-  @media (max-width: ${props => props.theme.smallBreakpoint}) {
+  @media (max-width: ${(props) => props.theme.smallBreakpoint}) {
     div.siteContainer {
       flex-direction: column;
-
       header {
+        width: initial;
         flex-direction: column;
       }
     }
 
     div.description {
-      margin-bottom: ${props => props.theme.smallMargin};
+      margin-bottom: ${(props) => props.theme.smallMargin};
       max-width: initial;
     }
 
