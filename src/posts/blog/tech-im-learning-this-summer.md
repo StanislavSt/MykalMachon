@@ -8,9 +8,11 @@ tags:
   - goals
 date: 2019-05-13T20:05:54.756Z
 ---
+![man on computer with sunset in the background](/images/uploads/tech-im-learning-this-summer.jpg "Picture of a man studying at a computer by Simon Abrams on Unsplash")
+
 As of April 28th 2019, I finished my third year in University! 🎉 
 
-While, I am going back to work full time, I should still have some more time on evenings and weekends to work on sharpening my tech skills a little bit. I've got a few technologies in particular that I would like to get to know a little better. 
+While, I am going back to work full time, I should still have some more time on evenings and weekends. In true student fashion I'm planning to fill some of this time learning and sharpening my tech skills. I've got a few technologies in particular that I would like to get to know a little better. 
 
 ## Things I Want To Learn
 
