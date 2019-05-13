@@ -89,3 +89,6 @@ Facebook has been under heavy fire the last year or so [regarding privacy scanda
 The odds are definitely not stacked in Facebook and Oculus's favour here. VR has has had problems climbing all of the hurdles I just mentioned. For the Oculus Quest to topple them all and come on top as a commercially viable, fully viable VR headset would be unprecedented and huge win for Oculus and for every other name in VR. 
 
 However, even with all of Facebook's resources, I'm not sure if Oculus will be able to pull this off. Only time will tell and until them I'm still an optimistic VR fanboy.
+
+# Update! May 8th 2019
+I just pre-ordered the quest on amazon! It should be delivered on May 21st (the day of release) and I am stoked!
