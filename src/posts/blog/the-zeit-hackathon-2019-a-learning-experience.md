@@ -31,7 +31,7 @@ Now is a server-less hosting platform. At the start of the Hackathon, I knew Now
 
 * **Cost Savings:** Apps only use compute-power when they're in use, greatly reducing the cost of the app in the first place
 * **Crazy-fast Deployments:** Apps literally take 10-15 seconds to go from local to live with Now which saves time and overall just feels really cool.
-* **CDN without the work**: Now allows you to duplicate your app across their servers which are placed throughout the world with a few lines of config (seriously it's crazy simple, see here) 
+* **CDN without the work**: Now allows you to duplicate your app across their servers which are placed throughout the world with a few lines of config (seriously it's crazy simple, see [here](https://zeit.co/docs/v2/deployments/concepts/cdn-and-global-distribution/)) 
 
 While all of this stuff is super cool, I did encounter a few issues with Now and Server-less:
 
