@@ -11,9 +11,10 @@ date: 2019-04-25T01:15:15.672Z
 ---
 ![Man In VR Headset](/images/uploads/oculus-rift-pic.jpg "VR Picture by Lux Interaction on Unsplash")
 
-## VR's Challenging Journey So Far
 
 I've always been captivated by the concept of Virtual Reality. I grew up in the early 2000's playing games like Super Mario 64, Legend of Zelda: Ocarina of Time, Pokemon, and Final Fantasy (mostly 3). All of these games showed me worlds that I wish I could really experience and take part in first hand. Then, in august of 2012,  Oculus released a [kick starter video](https://www.youtube.com/watch?v=DhcOMOWRMnA) that showed people a world in which those dreams could be real. 
+
+## VR's Challenging Journey So Far
 
 6-7 years later, here we are; VR is more viable than ever thanks to the advent of independent headsets like the [Oculus Go](https://www.oculus.com/go/?locale=en_US), more powerful PC's, mainstream gaming adoption ([PSVR](https://www.playstation.com/en-ca/explore/playstation-vr/?emcid=pa-co-108223&utm_medium=Paid_Search&utm_campaign=&utm_source=&utm_term=pa-co-108223&utm_content=&gclid=CJ76zcS36uECFTG0ZQodnekIFQ)), innovation in the headset market, and [billions of investor dollars](https://www.forbes.com/sites/briansolomon/2014/03/25/facebook-buys-oculus-virtual-reality-gaming-startup-for-2-billion/#4d711e0a2498). However, even with the immense progress we've made, we're still nowhere close to living in the world of Ernest Cline's "Ready Player One". 
 
@@ -89,3 +90,6 @@ Facebook has been under heavy fire the last year or so [regarding privacy scanda
 The odds are definitely not stacked in Facebook and Oculus's favour here. VR has has had problems climbing all of the hurdles I just mentioned. For the Oculus Quest to topple them all and come on top as a commercially viable, fully viable VR headset would be unprecedented and huge win for Oculus and for every other name in VR. 
 
 However, even with all of Facebook's resources, I'm not sure if Oculus will be able to pull this off. Only time will tell and until them I'm still an optimistic VR fanboy.
+
+# Update! May 8th 2019
+I just pre-ordered the quest on amazon! It should be delivered on May 21st (the day of release) and I am stoked!
