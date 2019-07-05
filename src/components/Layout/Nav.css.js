@@ -29,6 +29,7 @@ const NavStyles = styled.nav`
     display: flex;
     justify-content: flex-end;
     a {
+      font-size: 1.3em;
       color: ${(props) =>
         props.isLight ? props.theme.textDark : props.theme.textLight};
       text-decoration: none;
