@@ -42,7 +42,7 @@ const LayoutStyles = styled.main`
 
   .layout-content {
     width: 100%;
-    max-width: 800px;
+    max-width: ${(props) => props.theme.contentMaxWidth};
   }
 `;
 

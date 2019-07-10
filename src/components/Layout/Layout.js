@@ -13,14 +13,14 @@ const siteTheme = {
   marginSmall: `12px`,
   marginMedium: `24px`,
   marginLarge: `48px`,
-  contentMaxWidth: `800px`
+  contentMaxWidth: `800px`,
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children, isLight }) => {
   return (
     <ThemeProvider theme={siteTheme}>
       <LayoutStyles>
-        <Nav />
+        <Nav isLight={isLight} />
         <section id="page-content">{children}</section>
       </LayoutStyles>
     </ThemeProvider>

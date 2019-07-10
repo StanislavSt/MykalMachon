@@ -12,7 +12,7 @@ const HeroStyles = styled.article`
   align-items: center;
   .hero-content {
     width: 100%;
-    max-width: 800px;
+    max-width: ${(props) => props.theme.contentMaxWidth};
     color: white;
     h1 {
       font-size: 4.8em;

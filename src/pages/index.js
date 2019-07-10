@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Layout from '../components/Layout/Layout';
 import SEO from '../components/seo';
-import IndexHero from '../components/singleton/IndexHero';
+import IndexHero from '../components/singletons/IndexHero';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout isLight={false}>
     <SEO title="Home" />
     <IndexHero />
   </Layout>

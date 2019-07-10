@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.createPages = () => {
+  console.log('See gatsby-node.js to create pages...');
+};

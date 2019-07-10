@@ -1,9 +1,10 @@
 import React from 'react';
 import NavStyles from './Nav.css';
+import PropTypes from 'prop-types';
 
-const Nav = () => {
+const Nav = ({ isLight }) => {
   return (
-    <NavStyles isLight={false}>
+    <NavStyles isLight={isLight}>
       <div className="nav-content">
         <div className="nav-content__title">
           <p>Mykal Machon</p>
@@ -17,6 +18,10 @@ const Nav = () => {
       </div>
     </NavStyles>
   );
+};
+
+Nav.propTypes = {
+  isLight: PropTypes.bool.isRequired,
 };
 
 export default Nav;
