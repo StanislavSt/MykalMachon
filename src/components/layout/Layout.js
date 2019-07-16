@@ -1,9 +1,10 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-
+// * Components
 import Nav from './Nav';
-// import Footer from './Footer';
-import LayoutStyles from './Layout.css';
+// * Styles
+import '../main.css'; // for universal styles (body, *, etc)
+import LayoutStyles from './Layout.css'; // for component scoped styles
 
 const siteTheme = {
   textDark: `#000000`,

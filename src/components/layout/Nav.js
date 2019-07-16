@@ -20,6 +20,10 @@ const Nav = ({ isLight }) => {
   );
 };
 
+Nav.defaultProps = {
+  isLight: true,
+};
+
 Nav.propTypes = {
   isLight: PropTypes.bool.isRequired,
 };

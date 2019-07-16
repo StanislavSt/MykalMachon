@@ -105,13 +105,13 @@ const IndexHero = () => {
         <h1 class="a1">Hey, I'm Mykal!</h1>
         <p class="a2">A developer, student, and tech lover</p>
         <p class="a3">
-          <Link to="/projects">See my work</Link>
+          <Link to="/projects">Read my posts</Link>
         </p>
         <p class="a4">
           <Link to="/about">Learn more about me</Link>
         </p>
         <p class="a5">
-          <Link to="/posts">Read my posts</Link>
+          <Link to="/posts">See my projects</Link>
         </p>
       </div>
     </HeroStyles>
