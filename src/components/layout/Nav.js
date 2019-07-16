@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import NavStyles from './Nav.css';
 import PropTypes from 'prop-types';
 
@@ -7,13 +8,13 @@ const Nav = ({ isLight }) => {
     <NavStyles isLight={isLight}>
       <div className="nav-content">
         <div className="nav-content__title">
-          <p>Mykal Machon</p>
+          <Link to="/">Mykal Machon</Link>
         </div>
         <div className="nav-content__links">
-          <a href="/posts">Posts</a>
-          <a href="/about">About</a>
-          <a href="/projects">Projects</a>
-          <a href="/contact">Contact</a>
+          <Link to="/posts">Posts</Link>
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
     </NavStyles>

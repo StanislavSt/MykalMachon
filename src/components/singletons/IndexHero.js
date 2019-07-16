@@ -56,45 +56,23 @@ const HeroStyles = styled.article`
     }
   }
   .a1 {
-    animation-delay: 0.3s !important;
+    animation-delay: 0.2s !important;
   }
 
   .a2 {
-    animation-delay: 0.9s !important;
+    animation-delay: 0.6s !important;
   }
 
   .a3 {
-    animation-delay: 1.3s !important;
+    animation-delay: 1s !important;
   }
 
   .a4 {
-    animation-delay: 1.7s !important;
+    animation-delay: 1.4s !important;
   }
 
   .a5 {
-    animation-delay: 2.1s !important;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(-40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes fadeUp {
-    0% {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    animation-delay: 1.8s !important;
   }
 `;
 
@@ -105,13 +83,13 @@ const IndexHero = () => {
         <h1 class="a1">Hey, I'm Mykal!</h1>
         <p class="a2">A developer, student, and tech lover</p>
         <p class="a3">
-          <Link to="/projects">Read my posts</Link>
+          <Link to="/posts">Read my posts</Link>
         </p>
         <p class="a4">
           <Link to="/about">Learn more about me</Link>
         </p>
         <p class="a5">
-          <Link to="/posts">See my projects</Link>
+          <Link to="/projects">See my projects</Link>
         </p>
       </div>
     </HeroStyles>

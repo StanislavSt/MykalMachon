@@ -20,8 +20,13 @@ const NavStyles = styled.nav`
   }
 
   .nav-content__title {
-    p {
-      margin: 0px;
+    a {
+      color: ${(props) =>
+        props.isLight ? props.theme.textDark : props.theme.textLight};
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
