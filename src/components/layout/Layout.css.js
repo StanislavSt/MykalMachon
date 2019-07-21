@@ -11,7 +11,8 @@ const LayoutStyles = styled.main`
 
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -27,9 +28,20 @@ const LayoutStyles = styled.main`
     font-size: 2em;
   }
 
+  h4 {
+    font-size: 2em;
+    color: #555555;
+  }
+
   p,
-  a {
+  a,
+  li {
     font-size: 1.6em;
+    line-height: 1.7em;
+  }
+
+  p > a {
+    font-size: 1em;
   }
 
   #page-content {
