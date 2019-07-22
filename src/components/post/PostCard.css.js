@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 const PostCardStyles = styled.div`
-  color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
+  color: ${(props) =>
+    props.isLight ? props.theme.textDark : props.theme.textLight};
   width: 100%;
   padding: 0.3em 0.6em 0.3em 0.6em;
   border-radius: 2px;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid ${(props) => props.theme.background};
   border-bottom: 1px solid rgba(112, 112, 112, 0.1);
   display: flex;
   flex-direction: row;
@@ -18,7 +19,7 @@ const PostCardStyles = styled.div`
       font-size: 16px;
       margin-bottom: 0px;
       font-weight: bold;
-      color: white;
+      color: ${(props) => props.theme.text};
     }
     p:last-of-type {
       margin-top: 0px;
@@ -30,11 +31,11 @@ const PostCardStyles = styled.div`
     padding: 4px 8px 4px 8px;
     font-weight: bold;
     color: white;
-    background-color: #7912e3;
-    background-image: linear-gradient(43deg, #7912e3 0%, #f96c86 99%);
+    background-color: ${(props) => props.theme.highlight};
+    background-image: ${(props) => props.theme.backgroundGradient};
   }
   &:hover {
-    background: hsl(270, 85%, 10%);
+    background: ${(props) => props.theme.backgroundHighlight};
     border: 1px solid #7912e3;
   }
 `;

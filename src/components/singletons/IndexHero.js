@@ -4,16 +4,15 @@ import { Link } from 'gatsby';
 
 const HeroStyles = styled.article`
   width: 100%;
-  color: white;
+  color: ${(props) => props.theme.text};
   min-height: calc(100vh - 80px);
-  background: black;
+  background: ${(props) => props.theme.background};
   display: flex;
   justify-content: center;
   align-items: center;
   .hero-content {
     width: 100%;
     max-width: ${(props) => props.theme.contentMaxWidth};
-    color: white;
     h1 {
       font-size: 48px;
       margin: 0em 0px 0.8em 0px;
@@ -51,6 +50,8 @@ const HeroStyles = styled.article`
         color: white;
         &::before {
           width: 100%;
+          height: ${(props) =>
+            props.theme.background == '#ffffff' ? `100%` : `10px`};
         }
       }
     }

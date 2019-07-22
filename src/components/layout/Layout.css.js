@@ -7,9 +7,8 @@ const LayoutStyles = styled.main`
   align-items: flex-start;
   width: 100%;
   min-height: 100vh;
-  font-family: 'IBM Plex Mono', monospace;
-  background: ${(props) => (props.isLight ? `#ffffff` : `#000000`)};
-  color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
+  background: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.text};
 
   h1,
   h2,
