@@ -4,14 +4,19 @@ import PostList from '../components/post/PostList';
 
 const Posts = () => {
   return (
-    <Layout>
+    <Layout isLight={false}>
       <div class="layout-content">
-        <h1>Here are my Posts!</h1>
+        <h1>Posts, Articles, and Ramblings...</h1>
         <p>
-          I post about things ranging from my hobbies (kayaking, photography, video games) to
-          technical topics (react.js, hackathons, etc).
+          I usually post about a wide variety of things I'm interested in. This ranges from
+          technical articles (about React, CSS, Javascript, etc) to more personal posts (Goals, Life
+          Events, etc).
         </p>
-        <PostList />
+        <p>
+          If you like something, feel free to let me know on twitter or through my contact page!
+          thanks!
+        </p>
+        <PostList isLight={false} />
       </div>
     </Layout>
   );

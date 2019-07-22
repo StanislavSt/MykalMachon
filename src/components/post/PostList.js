@@ -3,7 +3,7 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import PostListStyles from './PostList.css';
 import PostCard from './PostCard';
 
-const PostList = () => {
+const PostList = ({ isLight }) => {
   const data = useStaticQuery(graphql`
     query GetPosts {
       allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } }) {
@@ -21,7 +21,7 @@ const PostList = () => {
   `);
 
   return (
-    <PostListStyles>
+    <PostListStyles isLight={isLight}>
       {data.allMarkdownRemark.edges.map((edge) => {
         const { title, date, slug } = edge.node.frontmatter;
         return (

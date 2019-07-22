@@ -3,10 +3,13 @@ import styled from 'styled-components';
 const LayoutStyles = styled.main`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
+  min-height: 100vh;
   font-family: 'IBM Plex Mono', monospace;
+  background: ${(props) => (props.isLight ? `#ffffff` : `#000000`)};
+  color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
 
   h1,
   h2,
@@ -51,6 +54,10 @@ const LayoutStyles = styled.main`
   .layout-content {
     width: 100%;
     max-width: ${(props) => props.theme.contentMaxWidth};
+  }
+
+  @media screen and (max-width: 800px) {
+    padding: 0px 24px 0px 24px;
   }
 `;
 
