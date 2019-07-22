@@ -1,6 +1,7 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { totalmem } from 'os';
+import { useStaticQuery, graphql, Link } from 'gatsby';
+import PostListStyles from './PostList.css';
+import PostCard from './PostCard';
 
 const PostList = () => {
   const data = useStaticQuery(graphql`
@@ -11,6 +12,7 @@ const PostList = () => {
             frontmatter {
               date
               title
+              slug
             }
           }
         }
@@ -19,18 +21,16 @@ const PostList = () => {
   `);
 
   return (
-    <div>
+    <PostListStyles>
       {data.allMarkdownRemark.edges.map((edge) => {
-        const { title, date } = edge.node.frontmatter;
-        console.log(edge);
+        const { title, date, slug } = edge.node.frontmatter;
         return (
-          <article key={date}>
-            <h1>{title}</h1>
-            <p>{date}</p>
-          </article>
+          <Link to={`/posts/${slug}`}>
+            <PostCard title={title} date={date} />
+          </Link>
         );
       })}
-    </div>
+    </PostListStyles>
   );
 };
 

@@ -14,15 +14,13 @@ const NavStyles = styled.nav`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    color: ${(props) =>
-      props.isLight ? props.theme.textDark : props.theme.textLight};
+    color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
     max-width: ${(props) => props.theme.contentMaxWidth};
   }
 
   .nav-content__title {
     a {
-      color: ${(props) =>
-        props.isLight ? props.theme.textDark : props.theme.textLight};
+      color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
       text-decoration: none;
       &:hover {
         text-decoration: underline;
@@ -34,9 +32,8 @@ const NavStyles = styled.nav`
     display: flex;
     justify-content: flex-end;
     a {
-      font-size: 1.3em;
-      color: ${(props) =>
-        props.isLight ? props.theme.textDark : props.theme.textLight};
+      font-size: 0.8em;
+      color: ${(props) => (props.isLight ? props.theme.textDark : props.theme.textLight)};
       text-decoration: none;
       margin: 0px 0.5em 0px 0.5em;
       &:hover {

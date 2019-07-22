@@ -15,7 +15,7 @@ const HeroStyles = styled.article`
     max-width: ${(props) => props.theme.contentMaxWidth};
     color: white;
     h1 {
-      font-size: 4.8em;
+      font-size: 48px;
       margin: 0em 0px 0.8em 0px;
       opacity: 0;
       animation: fadeIn 1s ease-in-out;
@@ -23,7 +23,7 @@ const HeroStyles = styled.article`
     }
     p {
       opacity: 0;
-      font-size: 2.4em;
+      font-size: 24px;
       animation: fadeUp 1s ease-in-out;
       animation-fill-mode: forwards;
     }
@@ -56,23 +56,23 @@ const HeroStyles = styled.article`
     }
   }
   .a1 {
-    animation-delay: 0.2s !important;
+    animation-delay: 0s !important;
   }
 
   .a2 {
-    animation-delay: 0.6s !important;
+    animation-delay: 0.4s !important;
   }
 
   .a3 {
-    animation-delay: 1s !important;
+    animation-delay: 0.8s !important;
   }
 
   .a4 {
-    animation-delay: 1.4s !important;
+    animation-delay: 1.2s !important;
   }
 
   .a5 {
-    animation-delay: 1.8s !important;
+    animation-delay: 1.6s !important;
   }
 `;
 

@@ -7,7 +7,6 @@ const LayoutStyles = styled.main`
   align-items: flex-start;
   width: 100%;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 10px;
 
   h1,
   h2,
@@ -17,31 +16,28 @@ const LayoutStyles = styled.main`
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 2.4em;
+    font-size: 24px;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 20px;
   }
 
   h4 {
     font-size: 2em;
-    color: #555555;
+    color: #666666;
   }
 
   p,
   a,
   li {
-    font-size: 1.6em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     line-height: 1.7em;
-  }
-
-  p > a {
-    font-size: 1em;
   }
 
   #page-content {

@@ -11,6 +11,7 @@ const siteTheme = {
   textLight: `#ffffff`,
   backgroundDark: `#000000`,
   backgroundLight: `#ffffff`,
+  gray: `#666666`,
   marginSmall: `12px`,
   marginMedium: `24px`,
   marginLarge: `48px`,
