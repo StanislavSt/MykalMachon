@@ -12,9 +12,6 @@ const Nav = ({ isLight }) => {
         </div>
         <div className="nav-content__links">
           <Link to="/posts">Posts</Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contact">Contact</Link>
         </div>
       </div>
     </NavStyles>

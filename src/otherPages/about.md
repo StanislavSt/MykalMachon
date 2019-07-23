@@ -2,7 +2,6 @@
 layout: page
 title: About Me
 slug: about
-date: 2019-05-13T20:05:54.756Z
 ---
 
 # Hi! I'm Mykal <span role="img" aria-label="wave">👋</span>

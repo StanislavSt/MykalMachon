@@ -74,6 +74,10 @@ const LayoutStyles = styled.main`
         }
       }
     }
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   .layout-content {
