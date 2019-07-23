@@ -26,35 +26,6 @@ const HeroStyles = styled.article`
       animation: fadeUp 1s ease-in-out;
       animation-fill-mode: forwards;
     }
-    a {
-      font-size: 0.8em;
-      position: relative;
-      color: #666666;
-      text-decoration: none;
-      z-index: 0;
-      transition: all 0.25s ease-in-out;
-      &::before {
-        z-index: -1;
-        position: absolute;
-        content: '';
-        color: white;
-        background-color: #7912e3;
-        background-image: linear-gradient(43deg, #7912e3 0%, #f96c86 99%);
-        left: 0;
-        bottom: 0;
-        height: 10px;
-        width: 0%;
-        transition: all 0.3s cubic-bezier(0.13, 0.93, 0.57, 1);
-      }
-      &:hover {
-        color: white;
-        &::before {
-          width: 100%;
-          height: ${(props) =>
-            props.theme.background == '#ffffff' ? `100%` : `10px`};
-        }
-      }
-    }
   }
   .a1 {
     animation-delay: 0s !important;

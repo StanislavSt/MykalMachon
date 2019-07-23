@@ -48,6 +48,32 @@ const LayoutStyles = styled.main`
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    a {
+      position: relative;
+      text-decoration: none;
+      color: ${(props) => props.theme.highlight};
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom: -2px;
+        height: 2px;
+        background: ${(props) => props.theme.backgroundHighlight};
+      }
+      &:hover {
+        background: ${(props) => props.theme.backgroundHighlight};
+        &:after {
+          background: ${(props) => props.theme.highlight};
+        }
+      }
+      &:active {
+        background: ${(props) => props.theme.background};
+        &:after {
+          background: ${(props) => props.theme.background};
+        }
+      }
+    }
   }
 
   .layout-content {
