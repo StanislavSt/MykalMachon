@@ -16,7 +16,7 @@ const darkTheme = {
   marginSmall: `12px`,
   marginMedium: `24px`,
   marginLarge: `48px`,
-  contentMaxWidth: `800px`
+  contentMaxWidth: `800px`,
 };
 
 const lightTheme = {
@@ -29,12 +29,12 @@ const lightTheme = {
   marginSmall: `12px`,
   marginMedium: `24px`,
   marginLarge: `48px`,
-  contentMaxWidth: `800px`
+  contentMaxWidth: `800px`,
 };
 
 const Layout = ({ children }) => {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={lightTheme}>
       <LayoutStyles>
         <Nav />
         <section id="page-content">{children}</section>

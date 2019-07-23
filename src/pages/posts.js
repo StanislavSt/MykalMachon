@@ -4,7 +4,7 @@ import PostList from '../components/post/PostList';
 
 const Posts = () => {
   return (
-    <Layout isLight={false}>
+    <Layout>
       <div class="layout-content">
         <h1>Posts, Articles, and Ramblings...</h1>
         <p>
@@ -16,7 +16,7 @@ const Posts = () => {
           If you like something, feel free to let me know on twitter or through my contact page!
           thanks!
         </p>
-        <PostList isLight={false} />
+        <PostList />
       </div>
     </Layout>
   );
