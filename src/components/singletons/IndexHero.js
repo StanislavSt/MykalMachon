@@ -58,10 +58,10 @@ const IndexHero = () => {
           <Link to="/posts">Read my posts</Link>
         </p>
         <p class="a4">
-          <Link to="/about">Learn more about me</Link>
+          <Link to="/pages/about">Learn more about me</Link>
         </p>
         <p class="a5">
-          <Link to="/projects">See my projects</Link>
+          <a href="https://github.com/mykalmachon">See my projects</a>
         </p>
       </div>
     </HeroStyles>

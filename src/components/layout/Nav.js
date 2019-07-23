@@ -12,6 +12,7 @@ const Nav = ({ isLight }) => {
         </div>
         <div className="nav-content__links">
           <Link to="/posts">Posts</Link>
+          <Link to="/pages/about">About Me</Link>
         </div>
       </div>
     </NavStyles>

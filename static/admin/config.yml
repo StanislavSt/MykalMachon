@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: dev
 
-media_folder: static/img
-public_folder: /img
+media_folder: static/images/uploads
+public_folder: /images
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
@@ -18,8 +18,8 @@ collections:
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'page'
+    label: 'Page'
     folder: 'src/otherPages/' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md

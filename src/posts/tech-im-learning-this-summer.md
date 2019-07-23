@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Tech I'm Learning This Summer
 slug: tech-im-learning-this-summer-2019
 tags:
@@ -7,7 +7,6 @@ tags:
   - learning
   - goals
 date: 2019-05-13T20:05:54.756Z
-type: post
 ---
 
 As of April 28th, 2019, I finished my third year at University! 🎉

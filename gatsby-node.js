@@ -6,6 +6,8 @@
 
 // You can delete this file if you're not using it
 const path = require('path');
+const postComp = path.resolve('./src/components/post/Post.js');
+const pageComp = path.resolve('./src/components/page/Page.js');
 
 exports.createPages = ({ graphql, actions }) => {
   console.log('See gatsby-node.js to create pages...');
@@ -17,11 +19,12 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } }) {
+        allMarkdownRemark {
           edges {
             node {
               frontmatter {
                 slug
+                layout
               }
             }
           }
@@ -29,13 +32,18 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then((results) => {
       results.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        createPage({
-          path: `/posts/${node.frontmatter.slug}`,
-          component: path.resolve('./src/components/post/Post.js'),
-          context: {
-            slug: node.frontmatter.slug,
-          },
-        });
+        if (node.frontmatter.slug) {
+          createPage({
+            path:
+              node.frontmatter.layout == 'post'
+                ? `/posts/${node.frontmatter.slug}`
+                : `/pages/${node.frontmatter.slug}`,
+            component: node.frontmatter.layout == 'post' ? postComp : pageComp,
+            context: {
+              slug: node.frontmatter.slug,
+            },
+          });
+        }
       });
       resolve();
     });

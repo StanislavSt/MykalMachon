@@ -5,14 +5,17 @@ import PostCard from './PostCard';
 
 const PostList = ({ isLight }) => {
   const data = useStaticQuery(graphql`
-    query GetPosts {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "post" } } }) {
+    query GetPostsDesc {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+        filter: { frontmatter: { layout: { eq: "post" } } }
+      ) {
         edges {
           node {
             frontmatter {
+              layout
               date
               title
-              slug
             }
           }
         }
